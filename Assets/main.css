@@ -1,0 +1,38 @@
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background-color: #1e1e1e;
+}
+
+h1 {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.a {
+    background-color: #ABCDEF;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #1e1e1e;
+}
+
+.b {
+    background-color: #ABCDEF;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #1e1e1e;
+}
+
+.c {
+    background-color: #ABCDEF;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #1e1e1e;
+}
