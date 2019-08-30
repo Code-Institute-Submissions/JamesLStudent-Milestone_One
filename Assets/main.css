@@ -1,4 +1,4 @@
-/*----------------- STYLES APPEARING ON EVERY PAGE -----------------*/
+/*----------------- STYLES APPEARING ON MULTIPLE PAGES -----------------*/
 
 .bg {
     position: absolute;
@@ -15,6 +15,16 @@ h1 {
     text-align: center;
     height: 15%;
     padding-top: 4%;
+}
+
+.subtitle {
+    text-align: center;
+    padding-top: 3%;
+    margin: 5% 0 0 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: #00304A
 }
 
 .black-text {
@@ -100,16 +110,7 @@ footer {
 .menu-item {
     background-color: #304A00;
     height: 30%;
-    margin-top: 3%;
-}
-
-.subtitle {
-    padding-top: 3%;
-    margin: 5% 0 5% 0;
-    display: inline-block;
-    width: 100%;
-    height: 10%;
-    background-color: #00304A
+    border: 5px solid #1e1e1e;
 }
 
 .small-link {
@@ -123,8 +124,17 @@ footer {
     color: #FFFFFF;
 }
 
-.small-link p {
+.vert-align {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/*----------------- EVENTS STYLE -----------------*/
+
+.sub-box {
+    background-color: #304A00;
+    height: auto;
+    border: 5px solid #1e1e1e;
+    line-height: 100%;
 }
