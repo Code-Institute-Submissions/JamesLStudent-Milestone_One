@@ -13,16 +13,22 @@
 h1 {
     background-color: #FFFFFF;
     text-align: center;
-    height: 15%;
-    padding-top: 4%;
+    min-height: 40px;
+    height: auto;
+    padding: 2% 0 2% 0;
+}
+
+.h1-box {
+    margin-bottom: 3%;
 }
 
 .subtitle {
     text-align: center;
-    padding-top: 3%;
+    padding: 3% 0 3% 0;
     margin: 5% 0 0 0;
     display: inline-block;
     width: 100%;
+    min-height: 15px;
     height: auto;
     background-color: #00304A
 }
@@ -124,6 +130,10 @@ footer {
     color: #FFFFFF;
 }
 
+.spacer {
+    margin-top: 0;
+}
+
 .vert-align {
     position: relative;
     top: 50%;
@@ -138,3 +148,48 @@ footer {
     border: 5px solid #1e1e1e;
     line-height: 100%;
 }
+
+/*----------------- TABLET MEDIA QUERIES -----------------*/
+
+@media (min-width: 768px) {
+    .footer {
+        margin-top: 3%;
+    }
+    .history {
+        margin-top: 3%;
+    }
+    .alt-link {
+        margin-top: 4%;
+    }
+    .subtitle {
+        margin-top: 2%;
+        padding: 1% 0 1% 0;
+    }
+    .spacer {
+        margin-top: 3%;
+    }
+}
+
+/*----------------- DESKTOP MEDIA QUERIES -----------------*/
+
+@media (min-width: 992px) {
+        .footer {
+        margin-top: 2%;
+    }
+    .history {
+        margin-top: 1%;
+    }
+    .alt-link {
+        margin-top: 1%;
+    }
+    .subtitle {
+        margin-top: 1%;
+    }
+    .spacer {
+        margin-top: 1%;
+    }
+}
+
+
+
+
