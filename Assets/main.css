@@ -19,7 +19,7 @@ h1 {
 }
 
 .h1-box {
-    margin-bottom: 
+    margin-bottom:
 }
 
 .subtitle {
@@ -59,31 +59,7 @@ footer {
 
 /*----------------- MAIN NAV ITEMS -----------------*/
 
-.a {
-    background-color: #ABCDEF;
-    float: left;
-    text-align: center;
-    border-radius: 10px;
-    border: 5px solid #1e1e1e;
-}
-
-.b {
-    background-color: #ABCDEF;
-    float: left;
-    text-align: center;
-    border-radius: 10px;
-    border: 5px solid #1e1e1e;
-}
-
-.c {
-    background-color: #ABCDEF;
-    float: left;
-    text-align: center;
-    border-radius: 10px;
-    border: 5px solid #1e1e1e;
-}
-
-.d {
+.navigation-item {
     background-color: #ABCDEF;
     float: left;
     text-align: center;
@@ -103,7 +79,7 @@ footer {
 }
 
 .alt-link {
-    margin: 5% 2% 0 2%;
+    margin: 1% 2% 0% 2%;
     display: inline-block;
     text-align: center;
     width: 96%;
@@ -147,6 +123,7 @@ footer {
     height: auto;
     border: 5px solid #1e1e1e;
     line-height: 100%;
+    margin-top: 3%;
 }
 
 /*----------------- TABLET MEDIA QUERIES -----------------*/
@@ -159,28 +136,31 @@ footer {
         margin-top: 3%;
     }
     .alt-link {
-        margin-top: 4%;
+        margin-top: 1%;
     }
     .subtitle {
-        margin-top: 2%;
+        margin-top: 2.5%;
         padding: 1% 0 1% 0;
     }
     .spacer {
         margin-top: 3%;
+    }
+    .sub-box {
+        margin-top: 2%;
     }
 }
 
 /*----------------- DESKTOP MEDIA QUERIES -----------------*/
 
 @media (min-width: 992px) {
-        .footer {
+    .footer {
         margin-top: 2%;
     }
     .history {
         margin-top: 1%;
     }
     .alt-link {
-        margin-top: 1%;
+        margin-top: 0;
     }
     .subtitle {
         margin-top: 1%;
@@ -188,8 +168,7 @@ footer {
     .spacer {
         margin-top: 1%;
     }
+    .sub-box {
+        margin-top: 0.5%;
+    }
 }
-
-
-
-
