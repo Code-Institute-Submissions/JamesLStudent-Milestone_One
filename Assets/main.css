@@ -58,12 +58,24 @@ footer {
 .left {
     float: left;
 }
+
+.right {
+    float: right;
+}
+
+.clear {
+    padding: 0;
+    margin: 0;
+}
+
 .footer-div {
     padding: 2%;
 }
+
 .left-align {
     text-align: left;
 }
+
 /*----------------- MAIN NAV ITEM -----------------*/
 
 .navigation-item {
@@ -98,12 +110,6 @@ footer {
 
 /*----------------- MENU STYLE -----------------*/
 
-.menu-item {
-    background-color: #304A00;
-    height: 30%;
-    border: 5px solid #1e1e1e;
-}
-
 .small-link {
     line-height: 100%;
     display: inline-block;
@@ -113,6 +119,26 @@ footer {
     border-radius: 10px;
     border: 5px solid #1e1e1e;
     color: #FFFFFF;
+}
+
+.food {
+    width: 30%;
+    float: left;
+    padding: 0;
+}
+
+.food-desc {
+    width: 50%;
+    float: left;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 5% 5% 0 5%;
+}
+
+.food-cost {
+    width: 20%;
+    float: left;
+    padding: 5% 5% 0 5%;
 }
 
 .spacer {
