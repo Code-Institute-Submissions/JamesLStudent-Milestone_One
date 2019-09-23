@@ -41,6 +41,10 @@ h1 {
     color: black;
 }
 
+.grey-text {
+    color: #212529;
+}
+
 footer {
     min-height: 20%;
     height: auto;
@@ -144,13 +148,11 @@ footer {
     float: left;
     border-left: 1px solid white;
     border-right: 1px solid white;
-    padding: 5% 5% 0 5%;
 }
 
 .food-cost {
     width: 20%;
     float: left;
-    padding: 5% 5% 0 5%;
 }
 
 .vert-align {
@@ -179,6 +181,12 @@ footer {
 
 .spacer {
     margin-top: 5%;
+}
+
+/*----------------- PRODUCE STYLE -----------------*/
+
+.produce {
+    padding: 0 3% 0 3%;
 }
 
 /*----------------- TABLET MEDIA QUERIES -----------------*/
