@@ -11,11 +11,12 @@
 }
 
 h1 {
-    background-color: #FFFFFF;
     text-align: center;
     min-height: 40px;
     height: auto;
     padding: 2% 0 2% 0;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .subtitle {
@@ -26,15 +27,20 @@ h1 {
     width: 100%;
     min-height: 15px;
     height: auto;
-    background-color: #00304A
+    background-color: #00304A;
+    color: #FFFFFF;
 }
 
 .sub-box {
-    background-color: #304A00;
+    background-color: #1B3E00;
     height: auto;
     border: 5px solid #1e1e1e;
     line-height: 100%;
     margin-top: 3%;
+    min-height: 6%;
+    height: auto;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .black-text {
@@ -59,7 +65,7 @@ footer {
     width: 100%;
     min-height: 100%;
     height: auto;
-    background-color: #60D300;
+    background-color: #141414;
 }
 
 .centerer {
@@ -95,7 +101,7 @@ footer {
 /*----------------- MAIN NAV ITEM -----------------*/
 
 .navigation-item {
-    background-color: #ABCDEF;
+    background-color: #FFFFFF;
     float: left;
     text-align: center;
     border-radius: 10px;
@@ -111,7 +117,8 @@ footer {
     width: 96%;
     min-height: 50%;
     height: auto;
-    background-color: #FF7400;
+    background-color: #4A0030;
+    padding: 0 2% 0 2%;
 }
 
 .alt-link {
@@ -121,7 +128,34 @@ footer {
     width: 96%;
     min-height: 5%;
     height: auto;
-    background-color: #FF0000;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+}
+
+.index-h1-background {
+    background-image: url("./images/index-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
+.history-img-one {
+    background-image: url("./images/history-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 250px;
+}
+
+.history-img-two {
+    background-image: url("./images/history-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 250px;
 }
 
 /*----------------- MENU STYLE -----------------*/
@@ -161,6 +195,14 @@ footer {
     transform: translateY(-50%);
 }
 
+.menu-h1-background {
+    background-image: url("./images/menu-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
 /*----------------- EVENTS STYLE -----------------*/
 
 .img-text {
@@ -173,9 +215,9 @@ footer {
 }
 
 .image {
-    height: 20%;
+    height: auto;
     width: 96%;
-    margin: 0 2% 0 2%;
+    margin: 2% 2% 0 2%;
     background-color: #FFFFFF;
 }
 
@@ -183,10 +225,36 @@ footer {
     margin-top: 5%;
 }
 
+.events-h1-background {
+    background-image: url("./images/events-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
 /*----------------- PRODUCE STYLE -----------------*/
 
 .produce {
     padding: 0 3% 0 3%;
+}
+
+.produce-h1-background {
+    background-image: url("./images/produce-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
+/*----------------- PRODUCE STYLE -----------------*/
+
+.contacts-h1-background {
+    background-image: url("./images/contacts-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
 }
 
 /*----------------- TABLET MEDIA QUERIES -----------------*/
@@ -211,6 +279,14 @@ footer {
     .sub-box {
         margin-top: 2%;
     }
+    .history-img-one {
+        height: 400px;
+        width: 450px;
+    }
+    .history-img-two {
+        height: 500px;
+        width: 550px;
+    }
 }
 
 /*----------------- DESKTOP MEDIA QUERIES -----------------*/
@@ -233,5 +309,14 @@ footer {
     }
     .sub-box {
         margin-top: 0.5%;
+    }
+    .history-img-one {
+        margin: 2% 2% 2% 2%;
+        float: left;
+    }
+    .history-img-two {
+        margin: 2% 2% 2% 2%;
+        float: right;
+        
     }
 }
