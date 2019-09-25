@@ -309,7 +309,7 @@ footer {
     min-height: auto;
 }
 
-/*----------------- PRODUCE STYLE -----------------*/
+/*----------------- CONTACTS STYLE -----------------*/
 
 .contacts-h1-background {
     background-image: url("./images/contacts-h1.jpg");
@@ -317,6 +317,12 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: auto;
+}
+
+.map {
+    width: 90%;
+    height: 85%;
+    margin: 0 5% 0 5%;
 }
 
 /*----------------- TABLET MEDIA QUERIES -----------------*/
