@@ -108,6 +108,11 @@ footer {
 
 /*----------------- MAIN NAV ITEM -----------------*/
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 .navigation-item {
     background-color: #FFFFFF;
     float: left;
@@ -120,6 +125,48 @@ footer {
     text-decoration: none;
     background-color: #383838;
     color: #FFFFFF;
+}
+
+.navigation-menu {
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #1e1e1e;
+    width: 90%;
+    margin: 0 5% 0 5%;
+}
+
+.no-margin {
+    margin-top: 0 !important;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.navigation-menu:hover {
+    text-decoration: none;
+    background-color: #383838;
+    color: #FFFFFF;
+}
+
+input {
+    display: none;
+}
+
+ul.submenu {
+    max-height: 0;
+    overflow: hidden;
+}
+
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+input:checked~ul.submenu {
+    max-height: 300px;
 }
 
 /*----------------- HOMEPAGE STYLE -----------------*/
@@ -364,6 +411,12 @@ footer {
 /*----------------- DESKTOP MEDIA QUERIES -----------------*/
 
 @media (min-width: 992px) {
+    .desktop-nav {
+        display: block;
+    }
+    .dropdown-vis {
+        display: none;
+    }
     .footer {
         margin-top: 2%;
     }
