@@ -40,15 +40,15 @@ h1 {
     min-height: 6%;
     height: auto;
     color: #FFFFFF;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .black-text {
     color: black;
 }
 
-.grey-text {
-    color: #212529;
+.white-text {
+    color: #FFFFFF;
 }
 
 footer {
@@ -98,6 +98,14 @@ footer {
     display: inline-block;
 }
 
+.no-deco {
+    text-decoration: none;
+}
+
+.no-deco:hover {
+    text-decoration: none;
+}
+
 /*----------------- MAIN NAV ITEM -----------------*/
 
 .navigation-item {
@@ -106,6 +114,12 @@ footer {
     text-align: center;
     border-radius: 10px;
     border: 5px solid #1e1e1e;
+}
+
+.navigation-item:hover {
+    text-decoration: none;
+    background-color: #383838;
+    color: #FFFFFF;
 }
 
 /*----------------- HOMEPAGE STYLE -----------------*/
@@ -130,6 +144,23 @@ footer {
     height: auto;
     background-color: #2D2D2D;
     color: #FFFFFF;
+}
+
+.title-link {
+    background-color: #1B3E00;
+    height: auto;
+    border: 5px solid #1e1e1e;
+    line-height: 100%;
+    margin-top: 3%;
+    min-height: 6%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    background-color: #1C3906;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .index-h1-background {
@@ -169,6 +200,12 @@ footer {
     border-radius: 10px;
     border: 5px solid #1e1e1e;
     color: #FFFFFF;
+}
+
+.small-link:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #320121;
 }
 
 .food {
@@ -219,6 +256,7 @@ footer {
     width: 96%;
     margin: 2% 2% 0 2%;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 .spacer {
@@ -231,6 +269,30 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: auto;
+}
+
+.moth-day {
+    background-image: url("./images/moth-day.jpg");
+}
+
+.fath-day {
+    background-image: url("./images/fath-day.jpg");
+}
+
+.christmas {
+    background-image: url("./images/christmas.png");
+}
+
+.easter {
+    background-image: url("./images/easter.jpg");
+}
+
+.events-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 290px;
 }
 
 /*----------------- PRODUCE STYLE -----------------*/
@@ -287,6 +349,10 @@ footer {
         height: 500px;
         width: 550px;
     }
+    .events-img {
+        height: 190px;
+        width: 730px;
+    }
 }
 
 /*----------------- DESKTOP MEDIA QUERIES -----------------*/
@@ -317,6 +383,10 @@ footer {
     .history-img-two {
         margin: 2% 2% 2% 2%;
         float: right;
-        
+
+    }
+    .events-img {
+        height: 230px;
+        width: 1220px;
     }
 }
