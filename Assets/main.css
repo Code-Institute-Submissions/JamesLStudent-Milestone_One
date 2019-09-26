@@ -1,6 +1,11 @@
+
 /*----------------- STYLES APPEARING ON MULTIPLE PAGES -----------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway:800|Roboto+Slab&display=swap');
+
+html {
+  scroll-behavior: smooth; /*- <--- not compatible with some browsers -*/
+}
 
 .bg {
     position: absolute;
@@ -146,6 +151,11 @@ ul {
     border: 5px solid #1e1e1e;
 }
 
+/*note: some styles (like the one above) use border instead of margin
+to fix an issue I believed to be with Bootstrap's columns not working
+with margin, but I now think it was actually the fault of Google Chrome's
+"inspect" function. */
+
 .navigation-item:hover {
     text-decoration: none;
     background-color: #383838;
@@ -287,6 +297,11 @@ input:checked~ul.submenu {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/*The above code is not my own - see the README for credits.
+I had some trouble with it, but eventually made it work by placing the
+elements it styles inside specific containers - anything with "height: auto;"
+would break this style*/
 
 .menu-h1-background {
     background-image: url("./images/menu-h1.jpg");
