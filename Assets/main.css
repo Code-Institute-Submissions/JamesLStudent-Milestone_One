@@ -1,5 +1,7 @@
 /*----------------- STYLES APPEARING ON MULTIPLE PAGES -----------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Raleway:800|Roboto+Slab&display=swap');
+
 .bg {
     position: absolute;
     top: 0;
@@ -11,6 +13,9 @@
 }
 
 h1 {
+    font-family: "Dancing script", sans-serif;
+    font-size: 3.5rem !important;
+    font-weight: 700;
     text-align: center;
     min-height: 40px;
     height: auto;
@@ -20,6 +25,8 @@ h1 {
 }
 
 .subtitle {
+    font-family: "raleway", serif;
+    text-transform: uppercase;
     text-align: center;
     padding: 3% 0 3% 0;
     margin: 5% 0 0 0;
@@ -32,6 +39,8 @@ h1 {
 }
 
 .sub-box {
+    font-family: "raleway", serif;
+    text-transform: uppercase;
     background-color: #1B3E00;
     height: auto;
     border: 5px solid #1e1e1e;
@@ -68,9 +77,22 @@ footer {
     background-color: #141414;
 }
 
+.back-top:hover {
+    text-decoration: underline;
+}
+
+.fa-lg {
+    font-size: 2.33333em !important;
+}
+
 .centerer {
     height: 100%;
     text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+.title-font {
+    font-family: "raleway", serif;
 }
 
 .left {
@@ -115,6 +137,8 @@ ul {
 }
 
 .navigation-item {
+    font-family: "raleway", serif;
+    text-transform: uppercase;
     background-color: #FFFFFF;
     float: left;
     text-align: center;
@@ -149,6 +173,7 @@ ul {
     text-decoration: none;
     background-color: #383838;
     color: #FFFFFF;
+    text-align: center;
 }
 
 input {
@@ -170,14 +195,19 @@ input:checked~ul.submenu {
     max-height: 300px;
 }
 
+.burger-icon {
+    margin: 1% 2% 0 2%;
+    display: inline-block;
+    float: right;
+}
+
 /*----------------- HOMEPAGE STYLE -----------------*/
 
-.history {
+.blurb {
     margin: 5% 2% 0 2%;
     display: inline-block;
     text-align: center;
     width: 96%;
-    min-height: 50%;
     height: auto;
     background-color: #4A0030;
     padding: 0 2% 0 2%;
@@ -195,6 +225,8 @@ input:checked~ul.submenu {
 }
 
 .title-link {
+    font-family: "raleway", serif;
+    text-transform: uppercase;
     background-color: #1B3E00;
     height: auto;
     border: 5px solid #1e1e1e;
@@ -211,35 +243,11 @@ input:checked~ul.submenu {
     text-decoration: none;
 }
 
-.index-h1-background {
-    background-image: url("./images/index-h1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: auto;
-}
-
-.history-img-one {
-    background-image: url("./images/history-1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 250px;
-}
-
-.history-img-two {
-    background-image: url("./images/history-2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 250px;
-}
-
 /*----------------- MENU STYLE -----------------*/
 
 .small-link {
+    font-family: "raleway", serif;
+    text-transform: uppercase;
     line-height: 100%;
     display: inline-block;
     text-align: center;
@@ -373,6 +381,45 @@ input:checked~ul.submenu {
     margin: 0 5% 0 5%;
 }
 
+/*----------------- HISTORY STYLE -----------------*/
+
+.history {
+    margin: 5% 2% 0 2%;
+    display: inline-block;
+    text-align: center;
+    width: 96%;
+    min-height: 50%;
+    height: auto;
+    background-color: #4A0030;
+    padding: 0 2% 0 2%;
+}
+
+.index-h1-background {
+    background-image: url("./images/index-h1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+}
+
+.history-img-one {
+    background-image: url("./images/history-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 250px;
+}
+
+.history-img-two {
+    background-image: url("./images/history-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 250px;
+}
+
 /*----------------- TABLET MEDIA QUERIES -----------------*/
 
 @media (min-width: 768px) {
@@ -380,6 +427,9 @@ input:checked~ul.submenu {
         margin-top: 3%;
     }
     .history {
+        margin-top: 3%;
+    }
+    .blurb {
         margin-top: 3%;
     }
     .alt-link {
@@ -422,6 +472,9 @@ input:checked~ul.submenu {
         margin-top: 2%;
     }
     .history {
+        margin-top: 1%;
+    }
+    .blurb {
         margin-top: 1%;
     }
     .alt-link {
