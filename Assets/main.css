@@ -43,6 +43,11 @@ h1 {
     color: #FFFFFF;
 }
 
+.gap-fix {
+    margin-top: 5% !important;
+    border-top: 0 !important;
+}
+
 .sub-box {
     font-family: "raleway", serif;
     text-transform: uppercase;
@@ -51,7 +56,7 @@ h1 {
     border: 5px solid #1e1e1e;
     line-height: 100%;
     margin-top: 3%;
-    min-height: 6%;
+    min-height: 10px;
     height: auto;
     color: #FFFFFF;
     text-decoration: none;
@@ -94,6 +99,10 @@ footer {
     height: 100%;
     text-align: center;
     font-family: "Roboto Slab", serif;
+}
+
+.align-center {
+    text-align: center;
 }
 
 .title-font {
@@ -228,10 +237,11 @@ input:checked~ul.submenu {
     display: inline-block;
     text-align: center;
     width: 96%;
-    min-height: 5%;
+    min-height: 20px;
     height: auto;
     background-color: #2D2D2D;
     color: #FFFFFF;
+    text-transform: capitalize;
 }
 
 .title-link {
@@ -242,7 +252,7 @@ input:checked~ul.submenu {
     border: 5px solid #1e1e1e;
     line-height: 100%;
     margin-top: 3%;
-    min-height: 6%;
+    min-height: 15px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -275,13 +285,13 @@ input:checked~ul.submenu {
 }
 
 .food {
-    width: 30%;
+    width: 34%;
     float: left;
     padding: 0;
 }
 
 .food-desc {
-    width: 50%;
+    width: 46%;
     float: left;
     border-left: 1px solid white;
     border-right: 1px solid white;
@@ -454,6 +464,9 @@ would break this style*/
         margin-top: 2.5%;
         padding: 1% 0 1% 0;
     }
+    .gap-fix {
+    margin-top: 2.5% !important;
+}
     .spacer {
         margin-top: 3%;
     }
@@ -498,6 +511,9 @@ would break this style*/
     .subtitle {
         margin-top: 1%;
     }
+    .gap-fix {
+    margin-top: 1% !important;
+}
     .spacer {
         margin-top: 1%;
     }
