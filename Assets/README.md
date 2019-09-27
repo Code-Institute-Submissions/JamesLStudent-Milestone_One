@@ -1,4 +1,4 @@
-Milestone project one - The Old Inn
+# Milestone project one - The Old Inn
 
 The website I have built is for a pub. It is geared towards being easily navigable for 
 customers, and making information easily accessible. It contains a homepage, a menu,
@@ -10,11 +10,11 @@ that you created as part of the design process. These files should themselves ei
 in the project itself (in an separate directory), or just hosted elsewhere online and can be in any 
 format that is viewable inside the browser.
 
-Demo
+## Demo
 A live demo of my website can be found at this address 
-"https://jameslstudent.github.io/Milestone_One/history.html"
+"https://jameslstudent.github.io/Milestone_One/index.html"
 
-UX
+## UX
 Seeing as the website is aimed at customers for the pub, I used some complementary colours 
 throughout the pages to make them warmer and more visually pleasing, but made sure that they 
 were muted enough that they weren't distracting from the text or appearing unpleasant.
@@ -25,12 +25,12 @@ the homepage espousing family values, and I included a "top picks from our menu"
 as well. I wanted customers to be able to get a feel for the type of pub it tries to be from the
 homepage, but to also provide more information if the customer is interested. 
 
-Technologies
+## Technologies
 1. HTML
 2. CSS
 3. Bootstrap
 
-Features
+## Features
 I included several links from one part of a page to another for easier navigation, and on the index 
 page, included links to specific parts of the menu page.
 
@@ -44,7 +44,7 @@ is possible, however at the time of writing I lack the Javascript know-how to im
 I'd also like to add semantic elements (e.g. <article>, <section> and <main>) and "aria" tags for
 screenreaders. 
 
-Testing
+## Testing
 This project was developed using the mobile-first approach. Because of this, it is essential that it
 work as well as possible on a mobile device. I tested this extensively, using both the Google Chrome
 developer tools, and on a mobile device. While the mobile page loaded well in all cases on every mobile
@@ -59,17 +59,17 @@ me to believe that either Cloud9 gives chrome an abnormal page size on the initi
 "inspect" tool is behind the problem, though I have looked into it and not found people experiencing 
 similar issues. 
 
-Deployment
+## Deployment
 My website is hosted on GitHub pages, and is deployed directly from the master branch in my GitHub
 repository. The site hosted on Pages automatically updates when I use git to push updates from my
 local repository. You should be able to use 'git clone' the code to run it locally on your machine.
 
-Credits
+## Credits
 I used "https://www.theswantytherington.co.uk/index" as a visual guide, particularly with my footer, and
 also used a lot of the items on their menu for my own menu. Note that I did not use any of their code, 
 only as an aesthetic reference. 
 
-Content
+## Content
 I got several pieces of code from Stack overflow, listed below.
  - vertical alignment (https://stackoverflow.com/questions/5703552/css-center-text-horizontally-and-vertically-inside-a-div-block)
  - automatic scrolling transition (https://stackoverflow.com/questions/25020582/scrolling-to-an-anchor-using-transition-css3)
@@ -77,7 +77,7 @@ I got several pieces of code from Stack overflow, listed below.
 I also used this website for colour selection:
  - https://htmlcolorcodes.com/color-picker/
 
-Media
+## Media
 The photos used in this site were obtained from google images, but their original sources follow:
  - produce-h1.jpg (https://www.msn.com/en-in/health/diet/study-fruits-and-vegetables-are-more-important-to-your-health-than-you-think/ar-AAFdZc6)
  - history-h2.jpg (https://www.shutterstock.com/search/wild+west+town+background?image_type=photo)
@@ -91,7 +91,7 @@ The photos used in this site were obtained from google images, but their origina
  - christmas.png (https://scienzamagia.eu/medicina-e-benessere/mangiare-molluschi-e-pesce-fa-bene-allambiente/)
  - events-h1.jpg (https://www.gearbrain.com/smart-home-holiday-tips-2623656621.html)
 
-Acknowledgements
+## Acknowledgements
 I received inspiration for this project from The New Inn at Mayshill, where I work at time of writing, because
 I thought I ought to use a source material I am familiar with. I know their average customer and the type of
 food they serve, and what they would want in a website.
