@@ -5,11 +5,6 @@ customers, and making information easily accessible. It contains a homepage, a m
 a page detailing the pub's history, a "contact us" page, and pages for events and for the
 pub's produce, as in: where they source their ingredients. 
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc.
-that you created as part of the design process. These files should themselves either be included
-in the project itself (in an separate directory), or just hosted elsewhere online and can be in any 
-format that is viewable inside the browser.
-
 ## Demo
 A live demo of my website can be found at this address 
 "https://jameslstudent.github.io/Milestone_One/index.html"
