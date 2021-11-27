@@ -220,6 +220,11 @@ input:checked~ul.submenu {
     float: right;
 }
 
+.h5-copy {
+    font-size: 1.25rem;
+    line-height: 1.2;     /*I use this to copy the styling on an h5, because I want to use it as*/
+}                           /*the child of a <label> element, but a h5 can not be used as such*/
+
 /*----------------- HOMEPAGE STYLE -----------------*/
 
 .blurb {
