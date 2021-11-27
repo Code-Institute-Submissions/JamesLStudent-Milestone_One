@@ -1,18 +1,42 @@
 # Milestone project one - The Old Inn
 
-The website I have built is for a pub. It is geared towards being easily navigable for 
-customers, and making information easily accessible. It contains a homepage, a menu,
+The website I have built is for a pub called The Old Inn. It hopes to be easily navigable for 
+prospective customers, and make information easily accessible. It contains a homepage, a menu,
 a page detailing the pub's history, a "contact us" page, and pages for events and for the
-pub's produce, as in: where they source their ingredients. 
+pub's produce, as in: where they source their ingredients. The site will be useful for prospective
+patrons of the pub, as well as the owners, who can hopefully use it to quickly update their menu 
+thanks to instructional comments left in the code.
 
-## Demo
+<img src="Assets/images/code-comment-cap.JPG"/>
+
+## Features
+
+### Navigation
+I included several links from one part of a page to another for easier navigation, and on the index 
+page, included links to specific parts of the menu page.
+I also used a burger menu for smaller screens so that the navigation items would take up less screenspace.
+
+<img src="Assets/images/dropdown-cap.JPG"/>
+
+<img src="Assets/images/dropdown-2.JPG"/>
+
+I used a scroll transition for these point-to-point links, though the CSS style I used to create this
+effect is not compatible with certain browsers, e.g. Safari and Edge.
+
+Features Left to Implement
+I'd like to make this scroll transition compatible with all browsers using Javascript, as I know this
+is possible, however at the time of writing I lack the Javascript know-how to implement this change.
+
+### Demo
 A live demo of my website can be found at this address 
 "https://jameslstudent.github.io/Milestone_One/index.html"
 
-## UX
+### UX
 Seeing as the website is aimed at customers for the pub, I used some complementary colours 
 throughout the pages to make them warmer and more visually pleasing, but made sure that they 
 were muted enough that they weren't distracting from the text or appearing unpleasant.
+
+<img src="Assets/images/homepage-cap.JPG"/>
 
 I wanted to give customers a solid understanding of the pub, and its ideals and values. To this end,
 I included the "history" page, the "our produce" page, I wrote a brief, informative paragraph in
@@ -23,21 +47,7 @@ homepage, but to also provide more information if the customer is interested.
 ## Technologies
 1. HTML
 2. CSS
-3. Bootstrap
-
-## Features
-I included several links from one part of a page to another for easier navigation, and on the index 
-page, included links to specific parts of the menu page.
-
-I used a scroll transition for these point-to-point links, though the CSS style I used to create this
-effect is not compatible with certain browsers, e.g. Safari and Edge.
-
-Features Left to Implement
-I'd like to make this scroll transition compatible with all browsers using Javascript, as I know this
-is possible, however at the time of writing I lack the Javascript know-how to implement this change.
-
-I'd also like to add semantic elements (e.g. <article>, <section> and <main>) and "aria" tags for
-screenreaders. 
+3. Bootstrap 
 
 ## Testing
 This project was developed using the mobile-first approach. Because of this, it is essential that it
@@ -71,6 +81,7 @@ I got several pieces of code from Stack overflow, listed below.
  - dropdown menu (https://stackoverflow.com/questions/44832572/pure-css-clickable-dropdown)
 I also used this website for colour selection:
  - https://htmlcolorcodes.com/color-picker/
+I used WC3 Validator to ensure mu code was error-free: https://validator.w3.org/
 
 ## Media
 The photos used in this site were obtained from google images, but their original sources follow:
