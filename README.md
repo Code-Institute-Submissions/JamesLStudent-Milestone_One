@@ -18,7 +18,7 @@ I also used a burger menu for smaller screens so that the navigation items would
 
 <img src="Assets/images/dropdown-cap.JPG"/>
 
-<img src="Assets/images/dropdown-2.JPG"/>
+<img src="Assets/images/dropdown-2-cap.JPG"/>
 
 I used a scroll transition for these point-to-point links, though the CSS style I used to create this
 effect is not compatible with certain browsers, e.g. Safari and Edge.
