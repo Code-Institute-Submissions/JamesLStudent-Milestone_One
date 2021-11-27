@@ -7,18 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Old Inn - Produce</title>
     <link href="Assets/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8ea1a4eee.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg">
-    <div class="produce-h1-background">
+    <header class="produce-h1-background">
         <h1 id="top">Produce</h1>
-    </div>
-    <div class="dropdown-vis">
+    </header>
+    <nav class="dropdown-vis">
         <input id="check01" type="checkbox" name="menu" />
-        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i class="fas fa-bars burger-icon"></i></label>
+        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i
+                class="fas fa-bars burger-icon"></i></label>
         <ul class="submenu">
             <li>
                 <a href="index.html">
@@ -48,8 +52,12 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="desktop-nav">
+    </nav>
+
+    <!-- The nav items are duplicated so that one group show up in a dropdown menu on
+         tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
+
+    <nav class="desktop-nav">
         <a href="index.html">
             <div class="col-6 col-md-12 col-lg-4 navigation-item black-text">
                 <h5>home</h5>
@@ -75,70 +83,78 @@
                 <h5>our history</h5>
             </div>
         </a>
-    </div>
-    <div class="centerer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">INTERESTED IN WHERE WE SOURCE OUR INGREDIENTS?</h4>
+    </nav>
+    <section>
+        <div class="centerer">
+            <div class="container-fluid"><!--index.html explains my use of "container-fluid" on row 84-->
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">INTERESTED IN WHERE WE SOURCE OUR INGREDIENTS?</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="img-text produce left-align white-text">
-            <p>
-                <br>All of our vegetables are sourced within 50 miles of the pub, and all of our meat products are sourced within 20 miles whenever possible. We try to source everything ethically, and whenever possible, our ingredients are kosher. If you're
-                uncertain about anything, feel free to ask in-house, and we'll do our best to accommodate you.</p>
-        </div>
-        <div class="img-text white-text produce">
-            <h6>Some of our affiliates:</h6>
-            <p>
-                <br>
-                <a target="_blank" href="https://www.marshfield-icecream.co.uk">www.marshfield-icecream.co.uk</a><br>
-                <a target="_blank" href="https://www.farmison.com/our-meat">www.heathbutchers.co.uk</a><br>
-                <a target="_blank" href="https://www.old-church-farm.co.uk">www.coalpitfarms.co.uk</a>
-                <!-- I left these links blue to make it clear that they work, as they are all in one div,
+            <div class="img-text produce left-align white-text">
+                <article>
+                    <br>All of our vegetables are sourced within 50 miles of the pub, and all of our meat products are
+                    sourced within 20 miles whenever possible. We try to source everything ethically, and whenever
+                    possible, our ingredients are kosher. If you're
+                    uncertain about anything, feel free to ask in-house, and we'll do our best to accommodate you.
+                </article>
+            </div>
+            <div class="img-text white-text produce">
+                <h6>Some of our affiliates:</h6>
+                <p>
+                    <br>
+                    <a target="_blank"
+                        href="https://www.marshfield-icecream.co.uk">www.marshfield-icecream.co.uk</a><br>
+                    <a target="_blank" href="https://www.farmison.com/our-meat">www.heathbutchers.co.uk</a><br>
+                    <a target="_blank" href="https://www.old-church-farm.co.uk">www.coalpitfarms.co.uk</a>
+                    <!-- I left these links blue to make it clear that they work, as they are all in one div,
                 so a hover effect would be unhelpful -->
-            </p>
-        </div>
-        <footer>
-            <div class="footer">
-                <a href="#top">
-                    <h5 class="back-top text-muted">BACK TO TOP <i class="fas fa-arrow-alt-circle-up"></i></h5>
-                </a>
-                <div class="col-12 footer-div text-muted">
-                    <h4>CONTACT</h4>
-                </div>
-                <div class="col-12 col-md-6 col-lg-8 left footer-div text-muted left-align">
-                    <h5>OPENING TIMES:</h5>
-                    <p class="left-align">
-                        <br>
-                        Mon - Thu: 11:00 - 23:00<br>
-                        Fri - Sat: 11:00 - 00:00<br>
-                        Sun: 12:00 - 22:30<br>
-                        <br>
-                    </p>
-                    <h5>FOOD SERVED:</h5>
-                    <p class="left-align">
-                        <br>
-                        Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
-                        Sat: 12:00 - 21:00<br>
-                        Sun: 12:00 - 15:00, 17:30 - 20:00</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
-                    <h5>CONTACT DETAILS</h5>
-                    <p class="left-align">
-                        <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
-                        info@oldinncoalpitheath.co.uk</p>
-                    <h5>
-                        <br>FOLLOW US:<br>
-                        <br>
-                    </h5>
-                    <a target="_blank" href="https://en-gb.facebook.com/login/">
-                    <i class="fab fa-facebook fa-lg white-text"></i>
-                    </a>
-                </div>
+                </p>
             </div>
-        </footer>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="#top">
+                <h5 class="back-top text-muted">BACK TO TOP <i class="fas fa-arrow-alt-circle-up"></i></h5>
+            </a>
+            <div class="col-12 footer-div text-muted">
+                <h4>CONTACT</h4>
+            </div>
+            <div class="col-12 col-md-6 col-lg-8 left footer-div text-muted left-align">
+                <h5>OPENING TIMES:</h5>
+                <p class="left-align">
+                    <br>
+                    Mon - Thu: 11:00 - 23:00<br>
+                    Fri - Sat: 11:00 - 00:00<br>
+                    Sun: 12:00 - 22:30<br>
+                    <br>
+                </p>
+                <h5>FOOD SERVED:</h5>
+                <p class="left-align">
+                    <br>
+                    Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
+                    Sat: 12:00 - 21:00<br>
+                    Sun: 12:00 - 15:00, 17:30 - 20:00
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
+                <h5>CONTACT DETAILS</h5>
+                <p class="left-align">
+                    <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
+                    info@oldinncoalpitheath.co.uk
+                </p>
+                <h5>
+                    <br>FOLLOW US:<br>
+                    <br>
+                </h5>
+                <a target="_blank" href="https://en-gb.facebook.com/login/">
+                    <i class="fab fa-facebook fa-lg white-text"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 

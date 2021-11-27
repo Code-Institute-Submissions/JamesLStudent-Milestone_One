@@ -216,7 +216,6 @@ input:checked~ul.submenu {
 
 .burger-icon {
     margin: 1% 2% 0 2%;
-    display: inline-block;
     float: right;
 }
 

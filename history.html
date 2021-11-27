@@ -7,18 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to The Old Inn</title>
     <link href="Assets/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8ea1a4eee.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg">
-    <div class="index-h1-background">
+    <header class="index-h1-background">
         <h1 id="top">Our History</h1>
-    </div>
-    <div class="dropdown-vis">
+    </header>
+    <nav class="dropdown-vis">
         <input id="check01" type="checkbox" name="menu" />
-        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i class="fas fa-bars burger-icon"></i></label>
+        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i
+                class="fas fa-bars burger-icon"></i></label>
         <ul class="submenu">
             <li>
                 <a href="index.html">
@@ -48,8 +52,10 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="desktop-nav">
+    </nav>
+    <!-- The nav items are duplicated so that one group show up in a dropdown menu on
+         tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
+    <nav class="desktop-nav">
         <a href="index.html">
             <div class="col-12 col-md-12 col-lg-4 navigation-item black-text">
                 <h5>home</h5>
@@ -75,47 +81,63 @@
                 <h5>our produce</h5>
             </div>
         </a>
-    </div>
+    </nav>
 
     <div class="centerer">
         <div class="container-fluid">
+            <!--index.html explains my use of "container-fluid" on row 84-->
             <div class="row">
                 <div class="subtitle">
                     <h4 class="col-12 vert-align">restaurant history</h4>
                 </div>
             </div>
         </div>
-        <div class="history">
-            <h6 class="white-text">Our pub has a long and colourful history, and if you're interested, we'd love to share it with you.</h6>
+        <section class="history">
+            <h6 class="white-text">Our pub has a long and colourful history, and if you're interested, we'd love to
+                share it with you.</h6>
             <div>
-                <img class="history-img-one" src="Assets/images/history-1.jpg" alt=""/>
+                <img class="history-img-one" src="Assets/images/history-1.jpg"
+                    alt="black and white image of an old wooden building" />
                 <p class="white-text left-align">
-                    While the pub is currently owned and managed by the Reynolds family, it has changed hands many times through the years, and served many purposes.<br>
+                    While the pub is currently owned and managed by the Reynolds family, it has changed hands many times
+                    through the years, and served many purposes.<br>
                     <br>
-                    Originally built as a halfway-house between Bristol and London in the mid-16th century, the building was a single storey, with only three rooms - A room for the owner and his wife, a common area, and a room for the merchants and travellers who stayed
+                    Originally built as a halfway-house between Bristol and London in the mid-16th century, the building
+                    was a single storey, with only three rooms - A room for the owner and his wife, a common area, and a
+                    room for the merchants and travellers who stayed
                     the night to sleep in.
                     <br>
                 </p>
             </div>
             <p class="white-text left-align">
                 <br>
-                It remained a halfway-house until 1896, when the UK Locomotive Act was repealed and motor vehicles travelling by road no longer needed a man waving a red flag and blowing a horn to walk ahead of them. This allowed cars to become more widespread, changing
-                the journey from London to Bristol from a several day excursion to a trip manageable in a single day.<br>
-                <br>This change meant that a halfway-house was no longer necessary, and thus the property was sold to become a family home. It was during this time that the building recieved several of its many expansions, upgrading it from three rooms to
+                It remained a halfway-house until 1896, when the UK Locomotive Act was repealed and motor vehicles
+                travelling by road no longer needed a man waving a red flag and blowing a horn to walk ahead of them.
+                This allowed cars to become more widespread, changing
+                the journey from London to Bristol from a several day excursion to a trip manageable in a single
+                day.<br>
+                <br>This change meant that a halfway-house was no longer necessary, and thus the property was sold to
+                become a family home. It was during this time that the building recieved several of its many expansions,
+                upgrading it from three rooms to
                 five.
             </p>
-            <img class="history-img-two" src="Assets/images/history-2.jpg" alt=""/>
+            <img class="history-img-two" src="Assets/images/history-2.jpg"
+                alt="photograph of an old wooden building taken around the 1900s (estimated)" />
             <p class="white-text left-align">
-                <br>This change did not last, however, as the start of World War One in 1914 saw the new family's father and only son enlist in the army, leaving their mother alone. Unfortunately, neither of them made it home from the war, and their mother
+                <br>This change did not last, however, as the start of World War One in 1914 saw the new family's father
+                and only son enlist in the army, leaving their mother alone. Unfortunately, neither of them made it home
+                from the war, and their mother
                 moved out of the house in 1920.<br>
                 <br>
-                The property remained uninhabited for 12 years, until 1932, when it was finally bought by the current owners' great grandfather, Frank Reynolds, fixed up, expanded to a two storey building and converted into a pub, which it has of course remained, under
+                The property remained uninhabited for 12 years, until 1932, when it was finally bought by the current
+                owners' great grandfather, Frank Reynolds, fixed up, expanded to a two storey building and converted
+                into a pub, which it has of course remained, under
                 the same family's care ever since.
             </p>
-        </div>
+        </section>
         <footer>
-           <div class="footer">
-               <a href="#top">
+            <div class="footer">
+                <a href="#top">
                     <h5 class="back-top text-muted">BACK TO TOP <i class="fas fa-arrow-alt-circle-up"></i></h5>
                 </a>
                 <div class="col-12 footer-div text-muted">
@@ -135,19 +157,21 @@
                         <br>
                         Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
                         Sat: 12:00 - 21:00<br>
-                        Sun: 12:00 - 15:00, 17:30 - 20:00</p>
+                        Sun: 12:00 - 15:00, 17:30 - 20:00
+                    </p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
                     <h5>CONTACT DETAILS</h5>
                     <p class="left-align">
                         <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
-                        info@oldinncoalpitheath.co.uk</p>
+                        info@oldinncoalpitheath.co.uk
+                    </p>
                     <h5>
                         <br>FOLLOW US:<br>
                         <br>
                     </h5>
                     <a target="_blank" href="https://en-gb.facebook.com/login/">
-                    <i class="fab fa-facebook fa-lg white-text"></i>
+                        <i class="fab fa-facebook fa-lg white-text"></i>
                     </a>
                 </div>
             </div>

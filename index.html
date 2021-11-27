@@ -7,18 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to The Old Inn</title>
     <link href="Assets/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8ea1a4eee.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg">
-    <div class="index-h1-background">
+    <header class="index-h1-background">
         <h1 id="top">The Old Inn</h1>
-    </div>
-    <div class="dropdown-vis">
+    </header>
+    <nav class="dropdown-vis">
         <input id="check01" type="checkbox" name="menu" />
-        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i class="fas fa-bars burger-icon"></i></label>
+        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i
+                class="fas fa-bars burger-icon"></i></label>
         <ul class="submenu">
             <li>
                 <a href="menu.html">
@@ -48,8 +52,10 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="desktop-nav">
+    </nav>
+    <!-- The nav items are duplicated so that one group show up in a dropdown menu on
+         tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
+    <nav class="desktop-nav">
         <a href="menu.html">
             <div class="col-6 col-md-12 col-lg-4 navigation-item black-text title-font">
                 <h5>menu</h5>
@@ -75,11 +81,12 @@
                 <h5>our history</h5>
             </div>
         </a>
-    </div>
+    </nav>
     <!-- The nav items are duplicated so that one group show up in a dropdown menu on
 tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
     <div class="centerer">
-        <div class="container-fluid"> <!-- All vertically aligned elements are contained by a 
+        <div class="container-fluid">
+            <!-- All vertically aligned elements are contained by a 
         container and a row, because the flex attribute that bootstrap uses in its rows makes 
         the vertical alignment property I'm using work, but I'm unfamiliar with the flex property. -->
             <div class="row">
@@ -90,215 +97,228 @@ tablet and mobile screens, and the other group appear without the dropdown on de
         </div>
         <div class="blurb">
             <h5 class="white-text">Welcome to The Old Inn!</h5>
-            <p class="left-align white-text">
-                We all know that there are a lot of different types of pub - there are the football pubs, filled with people wearing the same colour shirt, and dives, filled with students who are only there because the beer is cheap and they want a good meeting place
-                to get drunk. Then, there are the family-run pubs who serve good, wholesome food and provide a family atmosphere - and a children's play area for when the "family" part of the atmosphere gets impatient.
+            <article class="left-align white-text">
+                We all know that there are a lot of different types of pub - there are the football pubs, filled with
+                people wearing the same colour shirt, and dives, filled with students who are only there because the
+                beer is cheap and they want a good meeting place
+                to get drunk. Then, there are the family-run pubs who serve good, wholesome food and provide a family
+                atmosphere - and a children's play area for when the "family" part of the atmosphere gets impatient.
                 <br>
-                <br>We're that last option - we hope to see you soon!
-            </p>
+                <br>We're that last option - We hope to see you soon!
+            </article>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">Top picks from our menu</h4>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">Top picks from our menu</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="title-link container-fluid gap-fix">
-            <div class="row">
-                <a class="no-deco col-12" href="menu.html#evening">
-                    <h5 class="white-text align-center vert-align">
-                        evening menu
-                    </h5>
-                </a>
+            <div class="title-link container-fluid gap-fix">
+                <div class="row">
+                    <a class="no-deco col-12" href="menu.html#evening">
+                        <h5 class="white-text align-center vert-align">
+                            evening menu
+                        </h5>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Lamb Shank
-            </h5>
-            <p>
-                A lamb shank slow roasted in a rich rosemary with redcurrant & mint gravy, served with seasoned mashed potato
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Trio of Sausages
-            </h5>
-            <p>
-                Locally produced sausages on a bed of mashed potato, with vegetables and rich onion gravy
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Cajun spiced Chicken Breast
-            </h5>
-            <p>
-                Butterfly chicken breast marinated in Cajun spices, served with curly fries, sour cream dip and a side salad
-            </p>
-        </div>
-        <div class="title-link container-fluid">
-            <div class="row">
-                <a class="no-deco col-12" href="menu.html#evening">
-                    <h5 class="white-text align-center vert-align">
-                        starters and light bites
-                    </h5>
-                </a>
+            <div class="alt-link">
+                <h5>
+                    Lamb Shank
+                </h5>
+                <article>
+                    A lamb shank slow roasted in a rich rosemary with redcurrant & mint gravy, served with seasoned
+                    mashed
+                    potato
+                </article>
             </div>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Grilled Halloumi
-            </h5>
-            <p>
-                served with a garlic & herb crust or plainly grilled with a sweet chilli dip
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                prawn cocktail
-            </h5>
-            <p>
-                Prawns in creamy Marie Rose sauce, served with brown bread
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                grilled halloumi
-            </h5>
-            <p>
-                served with a garlic & herb crust or plainly grilled with a sweet chilli dip
-            </p>
-        </div>
-        <div class="title-link container-fluid">
-            <div class="row">
-                <a class="no-deco col-12" href="menu.html#evening">
-                    <h5 class="white-text align-center vert-align">
-                        sunday menu
-                    </h5>
-                </a>
+            <div class="alt-link">
+                <h5>
+                    Trio of Sausages
+                </h5>
+                <article>
+                    Locally produced sausages on a bed of mashed potato, with vegetables and rich onion gravy
+                </article>
             </div>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Roast Beef
-            </h5>
-            <p>
-                Served with carrots, green beans, peas and broccoli, with or without beef gravy
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Roast Chicken
-            </h5>
-            <p>
-                Served with carrots, green beans, peas and broccoli, with or without chicken gravy
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Roast Lamb
-            </h5>
-            <p>
-                Served with carrots, green beans, peas and broccoli, with or without redcurrant and mint gravy
-            </p>
-        </div>
-        <div class="title-link container-fluid">
-            <div class="row">
-                <a class="no-deco col-12" href="menu.html#evening">
-                    <h5 class="white-text align-center vert-align">
-                        vegan/vegetarian options
-                    </h5>
-                </a>
+            <div class="alt-link">
+                <h5>
+                    Cajun spiced Chicken Breast
+                </h5>
+                <article>
+                    Butterfly chicken breast marinated in Cajun spices, served with curly fries, sour cream dip and a
+                    side
+                    salad
+                </article>
             </div>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Mixed Bean Chilli
-            </h5>
-            <p>
-                Served with rice, salad, sour cream & tortilla chips
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Roast Vegetable Wraps
-            </h5>
-            <p>
-                Two flour tortillas filled with roasted vegetables in a fresh leek sauce, served with curly fries and optionally topped with melted stilton and served with sour cream
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Old Inn Sweet Potato Burger
-            </h5>
-            <p>
-                In a Brioche Bun on a bed of gem lettuce & tomato, served with chips, onion rings, side salad and tomato relish, melted mozarella is optional
-            </p>
-        </div>
-        <div class="title-link container-fluid">
-            <div class="row">
-                <a class="no-deco col-12" href="menu.html#evening">
-                    <h5 class="white-text align-center vert-align">
-                        specials this week
-                    </h5>
-                </a>
+            <div class="title-link container-fluid">
+                <div class="row">
+                    <a class="no-deco col-12" href="menu.html#evening">
+                        <h5 class="white-text align-center vert-align">
+                            starters and light bites
+                        </h5>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Chicken Breast Stuffed with Tomato and Mozarella
-            </h5>
-            <p>
-                Served with a warm basil dressing, ratatouille & new
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Deep Fried Garlic Cauliflower Balls
-            </h5>
-            <p>
-                Served with garlic parsley vegan mayo
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Wild Mushroom, Leek & Parmesan Risotto
-            </h5>
-        </div>
-        <div class="title-link container-fluid">
-            <div class="row">
-                <a class="no-deco col-12" href="menu.html#evening">
-                    <h5 class="white-text align-center vert-align">
-                        drinks
-                    </h5>
-                </a>
+            <div class="alt-link">
+                <h5>
+                    Grilled Halloumi
+                </h5>
+                <article>
+                    served with a garlic & herb crust or plainly grilled with a sweet chilli dip
+                </article>
             </div>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Punk IPA
-            </h5>
-            <p>
-                Light gold in colour, a perfect match for spicy food or an excellent compliment to a blue cheese
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Doombar bitter
-            </h5>
-            <p>
-                A creamy, nutty malt with a dry finish.
-            </p>
-        </div>
-        <div class="alt-link">
-            <h5>
-                Gem amber ale
-            </h5>
-            <p>
-                A creamy, nutty malt with a dry finish
-            </p>
-        </div>
+            <div class="alt-link">
+                <h5>
+                    prawn cocktail
+                </h5>
+                <article>
+                    Prawns in creamy Marie Rose sauce, served with brown bread
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    grilled halloumi
+                </h5>
+                <article>
+                    served with a garlic & herb crust or plainly grilled with a sweet chilli dip
+                </article>
+            </div>
+            <div class="title-link container-fluid">
+                <div class="row">
+                    <a class="no-deco col-12" href="menu.html#evening">
+                        <h5 class="white-text align-center vert-align">
+                            sunday menu
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Roast Beef
+                </h5>
+                <article>
+                    Served with carrots, green beans, peas and broccoli, with or without beef gravy
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Roast Chicken
+                </h5>
+                <article>
+                    Served with carrots, green beans, peas and broccoli, with or without chicken gravy
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Roast Lamb
+                </h5>
+                <article>
+                    Served with carrots, green beans, peas and broccoli, with or without redcurrant and mint gravy
+                </article>
+            </div>
+            <div class="title-link container-fluid">
+                <div class="row">
+                    <a class="no-deco col-12" href="menu.html#evening">
+                        <h5 class="white-text align-center vert-align">
+                            vegan/vegetarian options
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Mixed Bean Chilli
+                </h5>
+                <article>
+                    Served with rice, salad, sour cream & tortilla chips
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Roast Vegetable Wraps
+                </h5>
+                <article>
+                    Two flour tortillas filled with roasted vegetables in a fresh leek sauce, served with curly fries
+                    and
+                    optionally topped with melted stilton and served with sour cream
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Old Inn Sweet Potato Burger
+                </h5>
+                <article>
+                    In a Brioche Bun on a bed of gem lettuce & tomato, served with chips, onion rings, side salad and
+                    tomato
+                    relish, melted mozarella is optional
+                </article>
+            </div>
+            <div class="title-link container-fluid">
+                <div class="row">
+                    <a class="no-deco col-12" href="menu.html#evening">
+                        <h5 class="white-text align-center vert-align">
+                            specials this week
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Chicken Breast Stuffed with Tomato and Mozarella
+                </h5>
+                <article>
+                    Served with a warm basil dressing, ratatouille & new
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Deep Fried Garlic Cauliflower Balls
+                </h5>
+                <article>
+                    Served with garlic parsley vegan mayo
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Wild Mushroom, Leek & Parmesan Risotto
+                </h5>
+            </div>
+            <div class="title-link container-fluid">
+                <div class="row">
+                    <a class="no-deco col-12" href="menu.html#evening">
+                        <h5 class="white-text align-center vert-align">
+                            drinks
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Punk IPA
+                </h5>
+                <article>
+                    Light gold in colour, a perfect match for spicy food or an excellent compliment to a blue cheese
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Doombar bitter
+                </h5>
+                <article>
+                    A creamy, nutty malt with a dry finish.
+                </article>
+            </div>
+            <div class="alt-link">
+                <h5>
+                    Gem amber ale
+                </h5>
+                <article>
+                    A creamy, nutty malt with a dry finish
+                </article>
+            </div>
+        </section>
         <footer>
             <div class="footer">
                 <a href="#top">
@@ -321,19 +341,21 @@ tablet and mobile screens, and the other group appear without the dropdown on de
                         <br>
                         Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
                         Sat: 12:00 - 21:00<br>
-                        Sun: 12:00 - 15:00, 17:30 - 20:00</p>
+                        Sun: 12:00 - 15:00, 17:30 - 20:00
+                    </p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
                     <h5>CONTACT DETAILS</h5>
                     <p class="left-align">
                         <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
-                        info@oldinncoalpitheath.co.uk</p>
+                        info@oldinncoalpitheath.co.uk
+                    </p>
                     <h5>
                         <br>FOLLOW US:<br>
                         <br>
                     </h5>
                     <a target="_blank" href="https://en-gb.facebook.com/login/">
-                    <i class="fab fa-facebook fa-lg white-text"></i>
+                        <i class="fab fa-facebook fa-lg white-text"></i>
                     </a>
                 </div>
             </div>

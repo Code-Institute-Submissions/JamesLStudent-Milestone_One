@@ -7,19 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Old Inn - Contact details</title>
     <link href="Assets/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8ea1a4eee.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg">
-    <div class="contacts-h1-background">
-        <h1 id="top">Contact us</h1>
-    </div>
 
-    <div class="dropdown-vis">
+    <header class="contacts-h1-background">
+        <h1 id="top">Contact us</h1>
+    </header>
+
+    <nav class="dropdown-vis">
         <input id="check01" type="checkbox" name="menu" />
-        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i class="fas fa-bars burger-icon"></i></label>
+        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i
+                class="fas fa-bars burger-icon"></i></label>
         <ul class="submenu">
             <li>
                 <a href="index.html">
@@ -49,8 +54,12 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="desktop-nav">
+    </nav>
+
+    <!-- The nav items are duplicated so that one group show up in a dropdown menu on
+        tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
+
+    <nav class="desktop-nav">
         <a href="index.html">
             <div class="col-6 col-md-12 col-lg-4 navigation-item black-text">
                 <h5>home</h5>
@@ -76,9 +85,10 @@
                 <h5>our history</h5>
             </div>
         </a>
-    </div>
+    </nav>
     <div class="centerer">
         <div class="container-fluid">
+            <!--index.html explains my use of "container-fluid" on row 84-->
             <div class="row">
                 <div class="subtitle">
                     <h4 class="col-12 vert-align">need help finding us?</h4>
@@ -87,33 +97,37 @@
         </div>
         <div class="spacer"></div>
         <div class="spacer"></div>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39722.44489572203!2d-2.498745265756103!3d51.51958539567914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48719a8d5da2e161%3A0x8b621d25679029df!2sCoalpit%20Heath%2C%20Bristol!5e0!3m2!1sen!2suk!4v1569416616984!5m2!1sen!2suk"
-         style="border:0;" allowfullscreen=""></iframe>
-            <!-- An embedded map from google. Not my own code, though I
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39722.44489572203!2d-2.498745265756103!3d51.51958539567914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48719a8d5da2e161%3A0x8b621d25679029df!2sCoalpit%20Heath%2C%20Bristol!5e0!3m2!1sen!2suk!4v1569416616984!5m2!1sen!2suk"
+            style="border:0;" allowfullscreen=""></iframe>
+        <!-- An embedded map from google. Not my own code, though I
             modified height and width to make it more responsive -->
         <div class="subtitle">
             <h4>Making reservations?</h4>
         </div>
-        <div class="img-text white-text">
+        <article class="img-text white-text">
             <p class="text-muted">
-                <p class="h5-copy">Contact us at:<p>
+            <p class="h5-copy">Contact us at:
+            <p>
                 reservations@oldinncoalpitheath.co.uk<br>
                 01454 123456
             </p>
-        </div>
+        </article>
         <div class="subtitle">
             <h4>business enquiries</h4>
         </div>
-        <div class="img-text white-text">
+        <article class="img-text white-text">
             <p>
-                <p class="h5-copy">contact us at:<p>
+            <p class="h5-copy">contact us at:
+            <p>
                 business@oldinncoalpitheath.co.uk<br>
                 01454 654321
             </p>
-        </div>
+        </article>
         <footer>
             <div class="footer">
                 <a href="#top">
+                    <!--links back to the top of the current page-->
                     <h5 class="back-top text-muted">BACK TO TOP <i class="fas fa-arrow-alt-circle-up"></i></h5>
                 </a>
                 <div class="col-12 footer-div text-muted">
@@ -133,19 +147,23 @@
                         <br>
                         Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
                         Sat: 12:00 - 21:00<br>
-                        Sun: 12:00 - 15:00, 17:30 - 20:00</p>
+                        Sun: 12:00 - 15:00, 17:30 - 20:00
+                    </p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
                     <h5>CONTACT DETAILS</h5>
                     <p class="left-align">
                         <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
-                        info@oldinncoalpitheath.co.uk</p>
+                        info@oldinncoalpitheath.co.uk
+                    </p>
                     <h5>
                         <br>FOLLOW US:<br>
                         <br>
                     </h5>
                     <a target="_blank" href="https://en-gb.facebook.com/login/">
-                    <i class="fab fa-facebook fa-lg white-text"></i>
+                        <!--Because I don't have a facebook page created for this site, this simply -->
+                        <i class="fab fa-facebook fa-lg white-text"></i>
+                        <!--links to the facebook login screen instead-->
                     </a>
                 </div>
             </div>

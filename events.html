@@ -7,19 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Old Inn - Events</title>
     <link href="Assets/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8ea1a4eee.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg">
-    <div class="events-h1-background">
+    <header class="events-h1-background">
         <h1 id="top">Events</h1>
-    </div>
+    </header>
 
-    <div class="dropdown-vis">
+    <nav class="dropdown-vis">
         <input id="check01" type="checkbox" name="menu" />
-        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i class="fas fa-bars burger-icon"></i></label>
+        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i
+                class="fas fa-bars burger-icon"></i></label>
         <ul class="submenu">
             <li>
                 <a href="index.html">
@@ -49,8 +53,12 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="desktop-nav">
+    </nav>
+
+    <!-- The nav items are duplicated so that one group show up in a dropdown menu on
+         tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
+
+    <nav class="desktop-nav">
         <a href="index.html">
             <div class="col-6 col-md-12 col-lg-4 navigation-item black-text">
                 <h5>home</h5>
@@ -76,88 +84,102 @@
                 <h5>our history</h5>
             </div>
         </a>
-    </div>
+    </nav>
     <div class="centerer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">want to plan your own event?</h4>
+        <section>
+            <div class="container-fluid">
+                <!--index.html explains my use of "container-fluid" on row 84-->
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">want to plan your own event?</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="img-text white-text">
-            <p class="white-text">
-                <br>If you're thinking about hosting a wedding, birthday or other large party, we'd be glad to have you, so feel free to get in touch and we'll help however we can.
-                <br>Get in touch: events@oldinncoalpitheath.co.uk
-            </p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">mother's day</h4>
+            <article class="img-text white-text">
+                <p class="white-text">
+                    <br>If you're thinking about hosting a wedding, birthday or other large party, we'd be glad to have
+                    you, so feel free to get in touch and we'll help however we can.
+                    <br>Get in touch: events@oldinncoalpitheath.co.uk
+                    <!--note that none of these email addresss are valid; simply for show-->
+                </p>
+            </article>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">mother's day</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="image">
-            <img class="events-img moth-day" src="Assets/images/moth-day.jpg" alt=""/>
-        </div>
-        <div class="img-text">
-            <p class="white-text">
-                <br>We know Mother's Day is always right around the corner, no matter the time of year. That's why we accept reservations year-round, so if you want to book some seats now, send us an email at:
-                <br>mothersday@oldinncoalpitheath.co.uk
-            </p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">father's day</h4>
+            <div class="image">
+                <img class="events-img moth-day" src="Assets/images/moth-day.jpg" alt="" />
+                <!--note that because these images are simply decorative, and-->
+            </div>
+            <!--not informative, I'm leaving the alt attribute blank-->
+            <div class="img-text">
+                <article class="white-text">
+                    <br>We know Mother's Day is always right around the corner, no matter the time of year. That's why
+                    we accept reservations year-round, so if you want to book some seats now, send us an email at:
+                    <br>mothersday@oldinncoalpitheath.co.uk
+                </article>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">father's day</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="image">
-            <img class="events-img fath-day" src="Assets/images/fath-day.jpg" alt="" />
-        </div>
-        <div class="img-text">
-            <p class="white-text">
-                <br>Just like Mother's day, everybody thinks Father's Day is in the distant future, right up until it's too soon to make plans for it. We know this, and that's why we accept reservations at any time.<br>
-                Make a reservation at: fathersday@oldinncoalpitheath.co.uk
-            </p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">christmas</h4>
+            <div class="image">
+                <img class="events-img fath-day" src="Assets/images/fath-day.jpg" alt="" />
+            </div>
+            <div class="img-text">
+                <article class="white-text">
+                    <br>Just like Mother's day, everybody thinks Father's Day is in the distant future, right up until
+                    it's too soon to make plans for it. We know this, and that's why we accept reservations at any
+                    time.<br>
+                    Make a reservation at: fathersday@oldinncoalpitheath.co.uk
+                </article>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">christmas</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="image">
-            <img class="events-img christmas" src="Assets/images/christmas.png" alt=""/>
-        </div>
-        <div class="img-text">
-            <p class="white-text">
-                <br>Christmas is one of the busiest times of the year, especially for restaurants. We have a limited number of seats, and at christmas, they're always full, so if you want to spend christmas with us, better to book sooner than later.
-                <br>christmassday@oldinncoalpitheath.co.uk
-            </p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">easter</h4>
+            <div class="image">
+                <img class="events-img christmas" src="Assets/images/christmas.png" alt="" />
+            </div>
+            <div class="img-text">
+                <article class="white-text">
+                    <br>Christmas is one of the busiest times of the year, especially for restaurants. We have a limited
+                    number of seats, and at christmas, they're always full, so if you want to spend christmas with us,
+                    better to book sooner than later.
+                    <br>christmassday@oldinncoalpitheath.co.uk
+                </article>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">easter</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="image">
-            <img class="events-img easter" src="Assets/images/easter.jpg" alt=""/>
-        </div>
-        <div class="img-text">
-            <p class="white-text">
-                <br>Our Easter Sunday lunches are especially geared towards the younger members of your family. We accept reservations year round,
-                <br>contact us at easter@oldinncoalpitheath.co.uk and make a reservation
-            </p>
-        </div>
+            <div class="image">
+                <img class="events-img easter" src="Assets/images/easter.jpg" alt="" />
+            </div>
+            <div class="img-text">
+                <article class="white-text">
+                    <br>Our Easter Sunday lunches are especially geared towards the younger members of your family. We
+                    accept reservations year round,
+                    <br>contact us at easter@oldinncoalpitheath.co.uk and make a reservation
+                </article>
+            </div>
+        </section>
         <footer>
-           <div class="footer">
-               <a href="#top">
+            <div class="footer">
+                <a href="#top">
+                    <!--links back to the top of the current page-->
                     <h5 class="back-top text-muted">BACK TO TOP <i class="fas fa-arrow-alt-circle-up"></i></h5>
                 </a>
                 <div class="col-12 footer-div text-muted">
@@ -177,19 +199,23 @@
                         <br>
                         Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
                         Sat: 12:00 - 21:00<br>
-                        Sun: 12:00 - 15:00, 17:30 - 20:00</p>
+                        Sun: 12:00 - 15:00, 17:30 - 20:00
+                    </p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
                     <h5>CONTACT DETAILS</h5>
                     <p class="left-align">
                         <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
-                        info@oldinncoalpitheath.co.uk</p>
+                        info@oldinncoalpitheath.co.uk
+                    </p>
                     <h5>
                         <br>FOLLOW US:<br>
                         <br>
                     </h5>
                     <a target="_blank" href="https://en-gb.facebook.com/login/">
-                    <i class="fab fa-facebook fa-lg white-text"></i>
+                        <!--Because I don't have a facebook page created for this site, this simply -->
+                        <i class="fab fa-facebook fa-lg white-text"></i>
+                        <!--links to the facebook login screen instead-->
                     </a>
                 </div>
             </div>

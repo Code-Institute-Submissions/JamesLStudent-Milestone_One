@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Old Inn - Menu</title>
     <link href="Assets/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8ea1a4eee.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,9 +19,10 @@
     <div class="menu-h1-background">
         <h1 id="top">Menu</h1>
     </div>
-    <div class="dropdown-vis">
+    <nav class="dropdown-vis">
         <input id="check01" type="checkbox" name="menu" />
-        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i class="fas fa-bars burger-icon"></i></label>
+        <label class="black-text navigation-menu title-font h5-copy" for="check01">MORE INFO:<i
+                class="fas fa-bars burger-icon"></i></label>
         <ul class="submenu">
             <li>
                 <a href="index.html">
@@ -48,10 +52,12 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="desktop-nav">
+    </nav>
+    <!-- The nav items are duplicated so that one group show up in a dropdown menu on
+         tablet and mobile screens, and the other group appear without the dropdown on desktop views-->
+    <nav class="desktop-nav">
         <a href="index.html">
-            <div class="col-6 col-md-12 col-lg-4 navigation-item black-text">
+            <div class="col-6 col-md-12 col-lg-4 navigation-item black-text">  
                 <h5>home</h5>
             </div>
         </a>
@@ -75,9 +81,10 @@
                 <h5>our history</h5>
             </div>
         </a>
-    </div>
+    </nav>
     <div class="centerer">
         <div class="container-fluid">
+            <!--index.html explains my use of "container-fluid" on row 84-->
             <div class="row">
                 <div class="subtitle">
                     <h4 class="col-12 vert-align">find what you're looking for</h4>
@@ -85,508 +92,528 @@
             </div>
         </div>
         <div class="spacer"></div>
-        <div class="container">
-            <div class="row">
-                <a href="#drinks" class="small-link col-4">
-                    <p class="vert-align">drinks</p>
-                </a>
-                <a href="#evening" class="small-link col-4">
-                    <p class="vert-align">evening menu</p>
-                </a>
-                <a href="#starters" class="small-link col-4">
-                    <p class="vert-align">starters</p>
-                </a>
-                <a href="#sunday" class="small-link col-4">
-                    <p class="vert-align">sunday menu</p>
-                </a>
-                <a href="#specials" class="small-link col-4">
-                    <p class="vert-align">specials</p>
-                </a>
-                <a href="#desserts" class="small-link col-4">
-                    <p class="vert-align">desserts</p>
-                </a>
-                <a href="#vegan" class="small-link col-6">
-                    <p class="vert-align">vegetarian/<br>vegan menu</p>
-                </a>
-                <a href="#gluten" class="small-link col-6">
-                    <p class="vert-align">gluten and allergy info</p>
-                </a>
+        <section>
+            <div class="container">
+                <nav class="row">
+                    <a href="#drinks" class="small-link col-4">  <!--each of these links to its place on the menu-->
+                        <p class="vert-align">drinks</p>         <!--when clicked on by the user-->
+                    </a>
+                    <a href="#evening" class="small-link col-4">
+                        <p class="vert-align">evening menu</p>
+                    </a>
+                    <a href="#starters" class="small-link col-4">
+                        <p class="vert-align">starters</p>
+                    </a>
+                    <a href="#sunday" class="small-link col-4">
+                        <p class="vert-align">sunday menu</p>
+                    </a>
+                    <a href="#specials" class="small-link col-4">
+                        <p class="vert-align">specials</p>
+                    </a>
+                    <a href="#desserts" class="small-link col-4">
+                        <p class="vert-align">desserts</p>
+                    </a>
+                    <a href="#vegan" class="small-link col-6">
+                        <p class="vert-align">vegetarian/<br>vegan menu</p>
+                    </a>
+                    <a href="#gluten" class="small-link col-6">
+                        <p class="vert-align">gluten and allergy info</p>
+                    </a>
+                </nav>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="subtitle">
-                    <h4 class="col-12 vert-align">OR BROWSE THE MENU</h4>
-                </div>
-            </div>
-        </div>
-        <div class="spacer"></div>
-        <div id="starters" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        starters and light bites
-                    </h5>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="subtitle">
+                        <h4 class="col-12 vert-align">OR BROWSE THE MENU</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">
-                        soup of the day
-                    </h5>
-                </div>
-                <div class="food-desc ">
-                    <p class="vert-align">
-                        homemade and served with freshly baked, warm crusty bread
-                    </p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">
-                        £5.50
-                    </p>
+            <div class="spacer"></div>
+            <div id="starters" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            starters and light bites
+                        </h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">
-                        Southern fried pork bites
-                    </h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">
-                        served with a sweet chilli relish
-                    </p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6.50</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Prawn Cocktail</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Prawns in creamy Marie Rose sauce, served with brown bread</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">
+                            soup of the day
+                        </h5>
+                    </div>
+                    <div class="food-desc ">
+                        <p class="vert-align">
+                            homemade and served with freshly baked, warm crusty bread
+                        </p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">
+                            £5.50
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Grilled Halloumi</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served with a garlic & herb crust or plainly grilled with a sweet chilli dip</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£5.95</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">mozarella and tomato salad</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">made with buffalo mozzarella & slow roasted plum tomatoes, served with a balsamic & pesto dressing</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6.50</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">
+                            Southern fried pork bites
+                        </h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">
+                            served with a sweet chilli relish
+                        </p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6.50</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">homemade filo spring rolls</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">stuffed with feta cheese, parsley and garlic</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6.50</p>
-                </div>
-            </div>
-        </div>
-        <div id="evening" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        evening menu
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Prawn Cocktail</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Prawns in creamy Marie Rose sauce, served with brown bread</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">battered cod</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Served with chips and mushy peas</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£11.95</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Chicken and leek pie</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served with your choice of creamy mash or chips with fresh vegetables and a jug of gravy</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£12.95</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Grilled Halloumi</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served with a garlic & herb crust or plainly grilled with a sweet chilli
+                            dip</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£5.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">homemade lasagna</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Served with garlic bread and a side salad</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£11.95</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">mac and cheese</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Made with fresh pasta and 3 different cheeses</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£10.95</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">mozarella and tomato salad</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">made with buffalo mozzarella & slow roasted plum tomatoes, served with a
+                            balsamic & pesto dressing</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6.50</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">hunter's chicken</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Whole chicken breast topped with bacon, cheese and BBQ sauce served with chips & salad</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£12.95</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">8oz Rump</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">cooked to your liking, and served with grilled mushroom, grilled tomato, onion ring, house salad and your choice of chips, new potatoes or mash</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£16</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">homemade filo spring rolls</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">stuffed with feta cheese, parsley and garlic</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6.50</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">10oz Gammon</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served with grilled mushroom, grilled tomato, onion ring & house salad topped with a fried egg and served with your choice of chips, new potatoes or mash </p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£12.95</p>
+            <div id="evening" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            evening menu
+                        </h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">8oz Homemade Beef Burger</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served in a salad dressed bun with an onion chutney, gherkin and served with chips and onion rings</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£11.95</p>
-                </div>
-            </div>
-        </div>
-        <div id="sunday" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        sunday menu
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">battered cod</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Served with chips and mushy peas</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£11.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link">
-            <p>As well as the standard evening menu, on Sunday we also offer the following:</p>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Roasted Lamb Chop</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">with rosti potato, braised red cabbage & red wine sauce</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£16.95</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Chicken and leek pie</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served with your choice of creamy mash or chips with fresh vegetables and
+                            a jug of gravy</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£12.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Slow Roast Pork Belly</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">wilted summer greens, garlic cream potatoes & a juniper berry chutney</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£14.95</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Stuffed Chicken Breast</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Stuffed with tomato and mozzarella Served with a warm basil dressing, ratatouille & new potatoes</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£14.95</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">homemade lasagna</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Served with garlic bread and a side salad</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£11.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="specials" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        specials this week
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">mac and cheese</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Made with fresh pasta and 3 different cheeses</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£10.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Pan fried sea bass</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served with a leek potato cake, samphire & kale with a white wine cream sauce</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£15.95</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">southern fried chicken burger</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served in a Caesar dressed bun, topped with parmesan and served with chips and onion rings</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£11.95</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">hunter's chicken</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Whole chicken breast topped with bacon, cheese and BBQ sauce served with
+                            chips & salad</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£12.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Steak and Ale pie</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">served with your choice of creamy mash or chips with fresh vegetables and a jug of gravy</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£12.95</p>
-                </div>
-            </div>
-        </div>
-        <div id="desserts" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        desserts
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">8oz Rump</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">cooked to your liking, and served with grilled mushroom, grilled tomato,
+                            onion ring, house salad and your choice of chips, new potatoes or mash</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£16</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">lemon cheese cake</h5>
-                </div>
-                <div class="food-desc ">
-                    <p class="vert-align">made in-house with fresh lemon and served with either cream or ice cream</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£5.50</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">hot chocolate fudgecake</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">with chocolate sauce melted chocolate fudge, served with ice cream or cream</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">10oz Gammon</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served with grilled mushroom, grilled tomato, onion ring & house salad
+                            topped with a fried egg and served with your choice of chips, new potatoes or mash </p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£12.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">raspberry pavlova</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">with chewy meringue and sweet raspberries and cream</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£5.50</p>
-                </div>
-            </div>
-        </div>
-        <div id="vegan" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        vegan and vegetarian options
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">8oz Homemade Beef Burger</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served in a salad dressed bun with an onion chutney, gherkin and served
+                            with chips and onion rings</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£11.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">vegetable chilli</h5>
-                </div>
-                <div class="food-desc ">
-                    <p class="vert-align">made with roast vegetables with a sauce made in-house and served with fluffy rice. sour cream available for vegetarians</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£9.50</p>
+            <div id="sunday" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            sunday menu
+                        </h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">asparagus and lemon spaghetti</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">made with fresh ingredients and served in a creamy vegan sauce</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£9</p>
+            <div class="alt-link">
+                <p>As well as the standard evening menu, on Sunday we also offer the following:</p>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Roasted Lamb Chop</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">with rosti potato, braised red cabbage & red wine sauce</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£16.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">pizza margherita</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">made with vegan mozzarella and homemade tomato sauce on a crispy pizza base</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£11.50</p>
-                </div>
-            </div>
-        </div>
-        <div id="drinks" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        drinks
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Slow Roast Pork Belly</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">wilted summer greens, garlic cream potatoes & a juniper berry chutney</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£14.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Punk IPA</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">Light gold in colour, a perfect match for spicy food or an excellent compliment to a blue cheese</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£7</p>
-                </div>
-            </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Doombar bitter</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">A creamy, nutty malt with a dry finish</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6</p>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Stuffed Chicken Breast</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Stuffed with tomato and mozzarella Served with a warm basil dressing,
+                            ratatouille & new potatoes</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£14.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link container">
-            <div class="row">
-                <div class="food">
-                    <h5 class="vert-align">Gem amber ale</h5>
-                </div>
-                <div class="food-desc">
-                    <p class="vert-align">A creamy, nutty malt with a dry finish</p>
-                </div>
-                <div class="food-cost h5">
-                    <p class="vert-align">£6.50</p>
+            <div id="specials" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            specials this week
+                        </h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="gluten" class="sub-box container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="white-text vert-align no-deco">
-                        gluten and allergy information
-                    </h5>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Pan fried sea bass</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served with a leek potato cake, samphire & kale with a white wine cream
+                            sauce</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£15.95</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="alt-link">
-            <p>our recipes are subject to regular change because we constantly strive to improve. unfortunately, this means we can't always be certain about which foods have gluten or allergens - if you're unsure, ask us in-house, and we'll do our best to
-                help you out.</p>
-        </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">southern fried chicken burger</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served in a Caesar dressed bun, topped with parmesan and served with chips
+                            and onion rings</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£11.95</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Steak and Ale pie</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">served with your choice of creamy mash or chips with fresh vegetables and
+                            a jug of gravy</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£12.95</p>
+                    </div>
+                </div>
+            </div>
+            <div id="desserts" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            desserts
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">lemon cheese cake</h5>
+                    </div>
+                    <div class="food-desc ">
+                        <p class="vert-align">made in-house with fresh lemon and served with either cream or ice cream
+                        </p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£5.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">hot chocolate fudgecake</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">with chocolate sauce melted chocolate fudge, served with ice cream or
+                            cream</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">raspberry pavlova</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">with chewy meringue and sweet raspberries and cream</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£5.50</p>
+                    </div>
+                </div>
+            </div>
+            <div id="vegan" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            vegan and vegetarian options
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">vegetable chilli</h5>
+                    </div>
+                    <div class="food-desc ">
+                        <p class="vert-align">made with roast vegetables with a sauce made in-house and served with
+                            fluffy rice. sour cream available for vegetarians</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£9.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">asparagus and lemon spaghetti</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">made with fresh ingredients and served in a creamy vegan sauce</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">pizza margherita</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">made with vegan mozzarella and homemade tomato sauce on a crispy pizza
+                            base</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£11.50</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drinks" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            drinks
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Punk IPA</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">Light gold in colour, a perfect match for spicy food or an excellent
+                            compliment to a blue cheese</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Doombar bitter</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">A creamy, nutty malt with a dry finish</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link container">
+                <div class="row">
+                    <div class="food">
+                        <h5 class="vert-align">Gem amber ale</h5>
+                    </div>
+                    <div class="food-desc">
+                        <p class="vert-align">A creamy, nutty malt with a dry finish</p>
+                    </div>
+                    <div class="food-cost h5">
+                        <p class="vert-align">£6.50</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gluten" class="sub-box container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="white-text vert-align no-deco">
+                            gluten and allergy information
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="alt-link">
+                <article>our recipes are subject to regular change because we constantly strive to improve. unfortunately,
+                    this means we can't always be certain about which foods have gluten or allergens - if you're unsure,
+                    ask us in-house, and we'll do our best to
+                    help you out.</article>
+            </div>
+        </section>
         <div class="spacer"></div>
         <footer>
             <div class="footer">
@@ -610,19 +637,21 @@
                         <br>
                         Mon - Fri: 12:00 - 14:30, 17:00 - 21:00<br>
                         Sat: 12:00 - 21:00<br>
-                        Sun: 12:00 - 15:00, 17:30 - 20:00</p>
+                        Sun: 12:00 - 15:00, 17:30 - 20:00
+                    </p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 left footer-div text-muted left-align">
                     <h5>CONTACT DETAILS</h5>
                     <p class="left-align">
                         <br>Fake Street, Coalpit Heath, Bristol, FA73 0NE<br>01454 123456<br>
-                        info@oldinncoalpitheath.co.uk</p>
+                        info@oldinncoalpitheath.co.uk
+                    </p>
                     <h5>
                         <br>FOLLOW US:<br>
                         <br>
                     </h5>
                     <a target="_blank" href="https://en-gb.facebook.com/login/">
-                    <i class="fab fa-facebook fa-lg white-text"></i>
+                        <i class="fab fa-facebook fa-lg white-text"></i>
                     </a>
                 </div>
             </div>
